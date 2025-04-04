@@ -181,7 +181,7 @@ header .container {
   100% { transform: translateY(-50%); }
 }
 
-.hero-container {
+  .hero-container {
   position: relative;
   z-index: 3; /* 重ねる画像より上に表示 */
   max-width: 800px;
@@ -207,8 +207,10 @@ header .container {
 
 
 #hero .container {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 3; /* 重ねる画像より上に表示 */
+  max-width: 800px;
+  padding: 0 20px;
 }
 
 .date {
@@ -218,14 +220,25 @@ header .container {
 }
 
 #hero h1 {
-    font-size: 48px;
+ font-size: 4.5rem;
+  font-weight: 800;
+  color: var(--light);
+  margin-bottom: 20px;
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    
+    /*font-size: 48px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
 }
 
 .subtitle {
-    font-size: 24px;
-    margin-bottom: 20px;
+ /*   font-size: 24px;
+    margin-bottom: 20px; */
+      font-size: 1.5rem;
+  color: var(--light);
+  margin-bottom: 40px;
+  opacity: 0.9;
 }
 
 .mission-statement {
