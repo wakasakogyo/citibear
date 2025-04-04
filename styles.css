@@ -176,6 +176,36 @@ header .container {
     opacity: 0.1;
 }*/
 
+@keyframes moveBg {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+.hero-container {
+  position: relative;
+  z-index: 3; /* 重ねる画像より上に表示 */
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+/* テキストの視認性を高めるためのスタイル */
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: var(--light);
+  margin-bottom: 20px;
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--light);
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+
 #hero .container {
     position: relative;
     z-index: 1;
