@@ -184,7 +184,7 @@ header .container {
 
 
 
-#hero .container {
+ .container {
   position: relative;
   z-index: 3; /* 重ねる画像より上に表示 */
   max-width: 800px;
